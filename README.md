@@ -1,7 +1,8 @@
-# turbine-raspi
+# Turbine Raspi
 A little anemometer I made data gathered per second uploaded every minute. [View website](turbineraspi.com)
 
-(photo)
+![v4](https://raw.githubusercontent.com/jdc-cunningham/turbine-raspi/master/v_4.jpg)
+I'm actually more fond of [v3's](https://raw.githubusercontent.com/jdc-cunningham/turbine-raspi/master/v_3.jpg) design, smaller spoons(cone things).
 
 ## Background
 This was supposed to be a vertical wind turbine(the helical style) but as of this moment I'm not able to make these work both aerodynamically and structurally(3D printer ideally/probably). I also tried an APC-E model airplane propeller but the placement is not in open wind. Also this is supposedly able to power an ESP8266 Esp-01 but at this time I'm lacking that knowledge regarding level-shifters, storing energy, etc... this motor barely produces anything so I'm going to combine solar and wind and also it would not use the ESP ideally(WiFi) as this would be in the wild at some point eg. using GSM.
