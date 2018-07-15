@@ -1,7 +1,7 @@
 # Turbine Raspi
 A little anemometer I made data gathered per second uploaded every minute. [View website](turbineraspi.com)
 
-![v4](https://raw.githubusercontent.com/jdc-cunningham/turbine-raspi/master/v_4.jpg)
+![v4](https://raw.githubusercontent.com/jdc-cunningham/turbine-raspi/master/v_4_2.jpg)
 I'm actually more fond of [v3's](https://raw.githubusercontent.com/jdc-cunningham/turbine-raspi/master/v_3.jpg) design, smaller spoons(cone things).
 
 ## Background
