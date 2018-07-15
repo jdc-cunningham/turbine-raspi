@@ -39,7 +39,7 @@ The included files in this repo:
       
 ## Future
 ### Charting
-So in my other data logging projects for example [Raspi Solar Plotter](raspisolarplotter.com) is using C3.js for charting. I'll do something like that though I have a vision in my mind about using a circular plot style. Not a pie chart but a radius/area based volume visualization I want to try.
+So in my other data logging projects for example [Raspi Solar Plotter](http://raspisolarplotter.com) is using C3.js for charting. I'll do something like that though I have a vision in my mind about using a circular plot style. Not a pie chart but a radius/area based volume visualization I want to try.
 
 Right now it's just a text dump though on the front end.
 
