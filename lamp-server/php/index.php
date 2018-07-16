@@ -17,8 +17,8 @@
             foreach ($val_arr as $va_val) {
                 $ohm = 31.6;
                 $multiplier = 5/1024;
-                $voltage = round($va_val * $multiplier, 5);
-                $current = round($voltage / $ohm, 2);
+                $voltage = round($va_val * $multiplier, 3);
+                $current = round($voltage / $ohm, 4);
                 echo $voltage . 'V ' . $current . 'A<br>';
             }
         } 
