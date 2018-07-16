@@ -37,6 +37,6 @@
 	    echo 'Highest: ' . $voltage . 'V ' . $current . 'A<br>';
         } 
         else  {
-	        echo "tis empty my boy";
-	    }
+	    echo "tis empty my boy";
+	}
     }
