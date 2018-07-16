@@ -13,14 +13,28 @@
             }
             // sort
             rsort($val_arr);
-            echo 'max: ';
+		
+            $ohm = 31.6; // my particular fixed load some resistors in parallel
+            $multiplier = 5/1024; // reference voltage vs. adc steps
+            $first_five = [];
+            $total_watts = 0;
+            $output_counter = 0;
+
             foreach ($val_arr as $va_val) {
-                $ohm = 31.6;
-                $multiplier = 5/1024;
+                if ($output_counter < 5) {
+                    array_push($first_five, $va_val);
+                }
                 $voltage = round($va_val * $multiplier, 3);
                 $current = round($voltage / $ohm, 4);
-                echo $voltage . 'V ' . $current . 'A<br>';
+                $total_watts += $voltage * $current;
+                $output_counter++;
             }
+            
+            echo round($total_watts*100000, 3) .' micro watts<br>';
+            
+	    $voltage = round($first_five[0] * $multiplier, 3);
+	    $current = round($voltage / $ohm, 4);
+	    echo 'Highest: ' . $voltage . 'V ' . $current . 'A<br>';
         } 
         else  {
 	        echo "tis empty my boy";
