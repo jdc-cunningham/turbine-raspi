@@ -53,6 +53,6 @@ The actual project is a self-powered combined solar and wind powered computer wi
 
 ### 08/02/2018
 
-I added a try catch to the post. I should have had this earlier, I'm getting better at doing fail checks/type checks/etc in general. But yeah, so the other day I was making my cat chase a sun beam and he unplugged the router. Not a big deal, but the thread plot stopped working, I think the post request threw and error and the thread stopped. So with this catch, an upload may fail, but it'll keep it for the next run and hopefully in a minute or two your connection is restored.
+I added a try catch to the post. I should have had this earlier, I'm getting better at doing fail checks/type checks/etc in general. But yeah, so the other day I was making my cat chase a sun beam and he unplugged the router. Not a big deal, but the thread plot stopped working, I think the post request threw an error and the thread stopped. So with this catch, an upload may fail, but it'll keep it for the next run and hopefully in a minute or two your connection is restored.
 
 I did not take that into consideration on the initial build, long-term local storage, so since urls I think have a limit of like 2083 characters or something, I don't know. Not sure if you'll hit that limit when you send that in your parameters.
