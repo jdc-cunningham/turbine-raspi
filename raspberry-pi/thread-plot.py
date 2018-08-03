@@ -23,6 +23,11 @@ def write_to(file_path, write_data, mode):
     f = open(file_path, mode)
     f.write(write_data)
     f.close()
+    
+def write_failed_upload_log(fail_log):
+    f = open('/home/pi/Adafruit_Python_MCP3008/examples/failed-uploads.txt', 'w')
+    f.write(fail_log + "\n")
+    f.close()
 
 # send data
 def send_data():
@@ -35,8 +40,11 @@ def send_data():
             'post_key': post_key,
             't_val_pairs': t_val_pairs
         }
-
-        r = requests.post('http://your-domain.com/post', params = turbine_data)
+        
+        try:
+            r = requests.post('http://your-domain.com/post', params = turbine_data)
+        except requests.exceptions.RequestException as e:
+            write_failed_upload_log(e)
     # sys.exit()
 
     # empty data_file
