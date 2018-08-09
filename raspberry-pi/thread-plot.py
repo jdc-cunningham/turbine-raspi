@@ -26,7 +26,7 @@ def write_to(file_path, write_data, mode):
     
 def write_failed_upload_log(fail_log):
     f = open('/home/pi/Adafruit_Python_MCP3008/examples/failed-uploads.txt', 'w')
-    f.write(fail_log + "\n")
+    f.write(str(fail_log) + "\n")
     f.close()
 
 # send data
